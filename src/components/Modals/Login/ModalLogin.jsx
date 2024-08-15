@@ -30,6 +30,7 @@ const ModalLogin = ({ isOpenLogin, setFechar }) => {
     gap: "10px",
     position: "absolute",
     display: "flex",
+    color:"black"
   };
 
   
@@ -40,7 +41,7 @@ const ModalLogin = ({ isOpenLogin, setFechar }) => {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Senha", senha);
-    // Aqui você pode adicionar a lógica para manipular os dados do formulário
+  
   };
 
   if (isOpenLogin) {

@@ -31,6 +31,7 @@ const ModalRegistro = ({ isOpenRegistro, setFechar }) => {
     gap: "10px",
     position: "absolute",
     display: "flex",
+    color: "black"
   };
 
   const handleNomeChange = (e) => setNome(e.target.value);
