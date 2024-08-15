@@ -1,0 +1,10 @@
+#inicio{
+    text-align: center;
+    max-width: 500px;
+    color: white;   
+}
+
+#inicio h2,
+#inicio p{
+    margin-bottom: 1rem;
+}

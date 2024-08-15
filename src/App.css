@@ -1,0 +1,24 @@
+.logo{
+    width: 17%;
+}
+
+.App{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.App img{
+    margin-bottom: 3rem;
+}
+
+.btn-autenticacao{
+    position: absolute; /* ou use fixed se quiser que os botões permaneçam no canto mesmo ao rolar a página */
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    color: white;
+}
