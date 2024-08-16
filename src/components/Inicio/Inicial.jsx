@@ -1,4 +1,5 @@
 import './Inicial.css';
+import Quiz from "../../img/soutgrizz.png";
 import { useContext } from "react";
 import { useState } from "react";
 import { QuizContext } from "../context/quiz";
@@ -11,6 +12,10 @@ const Inicial = () => {
   const [openModalRegistro, setOpenModalRegistro] = useState(false);
   const [openModalLogin, setOpenModalLogin] = useState(false);
 
+  const goToMenu = () => {
+    dispatch({ type: "GO_TO_MENU" });
+  };
+
   return (
     <div id='inicio'>
       <div className="btn-autenticacao">
@@ -18,9 +23,10 @@ const Inicial = () => {
         <button onClick={() => setOpenModalLogin(true)}>Login</button>
         <button>Continuar com Google</button>
       </div>
+      <h1></h1>
       <h2>Seja bem-vindo ao SoutGrizz</h2>
-      <p>Clique no botão para começar!</p>
-      <button onClick={() => dispatch({ type: "CHANGE_STATE" })}>Iniciar</button>
+      <p>Faça login para iniciar!</p>
+      <button  onClick={goToMenu}>Iniciar</button>
       <div>
         <ModalRegistro isOpenRegistro={openModalRegistro} setFechar={() => setOpenModalRegistro(false)} />
         <ModalLogin isOpenLogin={openModalLogin} setFechar={() => setOpenModalLogin(false)} />

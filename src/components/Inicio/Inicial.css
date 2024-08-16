@@ -7,6 +7,12 @@
 #inicio h2,
 #inicio p{
     margin-bottom: 1rem;
+    color: white;
+}
+
+.logo{
+    width: 50%;
+
 }
 
 .btn-autenticacao{

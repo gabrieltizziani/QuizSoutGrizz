@@ -1,5 +1,6 @@
 .logo{
-    width: 17%;
+    color: #ffffff;
+    margin-top: 5rem;
 }
 
 .App{
@@ -11,6 +12,6 @@
 }
 
 .App img{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 

@@ -46,7 +46,7 @@ const ModalLogin = ({ isOpenLogin, setFechar }) => {
 
   if (isOpenLogin) {
     return (
-      <div style={background_stye}>
+      <div  style={background_stye}>
         <div style={modal_style}>
           <div style={btn_fechar} onClick={setFechar}>
             X
