@@ -1,6 +1,6 @@
 import "./App.css";
 import Inicial from "./components/Inicio/Inicial";
-
+import Quiz from "./img/logoatt.png";
 import { useContext, useEffect } from "react";
 import { QuizContext } from "./components/context/quiz";
 import Question from "./components/Questions/Question";
@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="logo">SOUT GRIZZ</h1>
+      <img className="logo" src={Quiz} alt="" />
       {quizState.gameStage === "Inicial" && <Inicial />}
       {quizState.gameStage === "Menu" && <PagInicial />}
       {quizState.gameStage === "Playing" && <Question />}

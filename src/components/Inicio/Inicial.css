@@ -10,10 +10,6 @@
     color: white;
 }
 
-.logo{
-    width: 50%;
-
-}
 
 .btn-autenticacao{
     position: absolute; /* ou use fixed se quiser que os botões permaneçam no canto mesmo ao rolar a página */

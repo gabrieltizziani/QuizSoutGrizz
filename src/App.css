@@ -1,11 +1,11 @@
 .logo{
-    color: #ffffff;
-    margin-top: 5rem;
+    width: 15%;
+    margin-top: 3rem;
 }
 
 .App{
     text-align: center;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     align-items: center;
     justify-content: center;
