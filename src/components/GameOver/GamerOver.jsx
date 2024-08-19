@@ -15,7 +15,7 @@ const GamerOver = () => {
         <p>Pontuação: {quizState.score}</p>
         <p>Você acertou {quizState.score} de {quizState.questions.length}{" "} perguntas.</p>
         <img src={Final} alt="Fim de Jogo" />
-        <button onClick={()=> dispatch({type: "NEW_GAME"})}>Reiniciar</button>
+        <button onClick={()=> dispatch({type: "NEW_GAME"})}>Voltar ao Início</button>
     </div>
   )
 }

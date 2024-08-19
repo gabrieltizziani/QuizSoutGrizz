@@ -4,9 +4,13 @@
     color: rgb(255, 255, 255);   
 }
 
-#inicio h2,
-#inicio p{
+
+.txt-inicio{
     margin-bottom: 1rem;
+    color: white;
+}
+
+.h2-telainicial{
     color: white;
 }
 
@@ -19,3 +23,6 @@
     gap: 10px;
     color: white;
 }
+
+
+  
