@@ -1,0 +1,17 @@
+.logo{
+    width: 15%;
+    margin-top: 3rem;
+}
+
+.App{
+    text-align: center;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.App img{
+    margin-bottom: 1rem;
+}
+
