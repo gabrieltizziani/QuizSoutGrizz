@@ -8,5 +8,7 @@ Caso de Uso:
 Model Canvas:
 ![MC](./Doc/ModelCanvas.png)
 
-Diagrama de Sequência :
+Diagrama de Sequência:
 ![DS](./Doc/DSequencia.jpeg)
+
+Documento de Visão:
