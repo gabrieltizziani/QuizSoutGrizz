@@ -11,7 +11,7 @@ const GamerOver = () => {
 
   return (
     <div id='gameover'>
-        <h2>Fim de Jogo!</h2>
+        <h2 className='tit-game'>Fim de Jogo!</h2>
         <p>Pontuação: {quizState.score}</p>
         <p>Você acertou {quizState.score} de {quizState.questions.length}{" "} perguntas.</p>
         <img src={Final} alt="Fim de Jogo" />
