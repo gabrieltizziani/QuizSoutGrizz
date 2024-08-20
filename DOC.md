@@ -8,3 +8,5 @@ Caso de Uso:
 Model Canvas:
 ![MC](./Doc/ModelCanvas.png)
 
+Diagrama de Sequência:
+![DS](./Doc/DSequencia.jpeg)
