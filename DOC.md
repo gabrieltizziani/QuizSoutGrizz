@@ -10,9 +10,7 @@ Model Canvas:
 
 Diagrama de Sequência:
 ![DS](./Doc/DSequencia.jpeg)
-<<<<<<< HEAD
+
 
 Documento de Visão:
 Download aqui!
-=======
->>>>>>> 1115f1a10139e26545fa3270fe12001e04886f74
