@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./ModalEntrar.css";
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
+import { QuizContext } from "../../context/quiz";
 
-const ModalEntrar = ({ isOpenEntrar, setFechar, onLoginSuccess }) => { // Recebe a função de sucesso de login
+
+const ModalEntrar = ({ isOpenEntrar, setFechar, onLoginSuccess }) => {
   const [name, setName] = useState("");
+  const [, dispatch] = useContext(QuizContext); // Usa o contexto para atualizar o estado global
 
   const background_style = {
     position: "fixed",
@@ -41,6 +44,7 @@ const ModalEntrar = ({ isOpenEntrar, setFechar, onLoginSuccess }) => { // Recebe
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Nome:", name);
+    dispatch({ type: "SET_USER_NAME", payload: name }); // Atualiza o nome do usuário no estado global
     onLoginSuccess(); // Chama a função de sucesso de login
   };
 
@@ -49,7 +53,9 @@ const ModalEntrar = ({ isOpenEntrar, setFechar, onLoginSuccess }) => { // Recebe
     if (credential) {
       try {
         const decoded = jwtDecode(credential);
+        const userName = decoded.name || ""; // Obtém o nome do usuário do token
         console.log(decoded);
+        dispatch({ type: "SET_USER_NAME", payload: userName }); // Atualiza o nome do usuário no estado global
         onLoginSuccess(); // Chama a função de sucesso de login após o Google login
       } catch (error) {
         console.error("Failed to decode token:", error);

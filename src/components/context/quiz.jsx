@@ -1,11 +1,12 @@
-import { useReducer, createContext } from "react"; 
-import questions from "../../data/questions"
+import React, { useReducer, createContext } from "react";
+import questions from "../../data/questions";
 
 // Definindo as etapas do quiz
 const STAGES = ["Inicial", "Menu", "Playing", "End"];
 
 // Estado inicial do quiz
 const initialState = {
+    userName: "", // Armazena o nome do usuário
     gameStage: STAGES[0], // Inicia na tela "Inicial"
     questions,
     currentQuestion: 0,
@@ -13,9 +14,14 @@ const initialState = {
     answerSelected: false,
 };
 
-// Função de redução (reducer) para gerenciar o estado do quiz
+// Função reducer para gerenciar o estado do quiz
 const quizReducer = (state, action) => {
     switch (action.type) {
+        case "SET_USER_NAME":
+            return {
+                ...state,
+                userName: action.payload, // Define o nome do usuário
+            };
         case "GO_TO_MENU":
             return {
                 ...state,
@@ -51,7 +57,8 @@ const quizReducer = (state, action) => {
         case "NEW_GAME":
             return {
                 ...initialState,
-                gameStage: STAGES[1], // Volta para o Menu ao iniciar um novo jogo
+                userName: state.userName, // Mantém o nome do usuário ao iniciar um novo jogo
+                gameStage: STAGES[1], // Volta para o Menu
             };
 
         case "CHECK_ANSWER":
