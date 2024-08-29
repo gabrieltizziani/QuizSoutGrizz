@@ -8,6 +8,7 @@ const data = [
         "A prática de criar métodos estáticos dentro de uma classe",
       ],
       answer: "A habilidade de objetos de diferentes classes responderem ao mesmo método de diferentes formas",
+      level: "Iniciante",
     },
     {
       question: "O que é encapsulamento em orientação a objetos?",
@@ -22,6 +23,7 @@ const data = [
       question: "Em orientação a objetos, qual dos seguintes conceitos está mais relacionado à reutilização de código?",
       options: ["Herança", "Polimorfismo", "Abstração", "Encapsulamento"],
       answer: "Herança",
+      level: "Intermediário",
     },
     {
       question: "Qual é o modificador de acesso mais restritivo em Java que permite que um membro da classe seja acessado apenas dentro da própria classe?",

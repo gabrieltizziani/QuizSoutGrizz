@@ -1,0 +1,75 @@
+/* Estilo geral para o container dos botões */
+#escolhaNivel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para o título */
+.h2-escolha {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo base para todos os botões */
+.btn-escolha {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+    outline: none;
+}
+
+/* Botão Iniciante */
+.btn-escolha.iniciante {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.4);
+}
+
+.btn-escolha.iniciante:hover {
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+    transform: scale(1.05);
+}
+
+/* Botão Intermediário */
+.btn-escolha.intermediario {
+    background: linear-gradient(135deg, #ffeb3b, #fbc02d);
+    box-shadow: 0 4px 8px rgba(255, 235, 59, 0.4);
+}
+
+.btn-escolha.intermediario:hover {
+    background: linear-gradient(135deg, #fbc02d, #ffeb3b);
+    transform: scale(1.05);
+}
+
+/* Botão Avançado */
+.btn-escolha.avancado {
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4);
+}
+
+.btn-escolha.avancado:hover {
+    background: linear-gradient(135deg, #d32f2f, #f44336);
+    transform: scale(1.05);
+}
+
+/* Botão Voltar à Página Inicial */
+.btn-escolha.voltar {
+    background: linear-gradient(135deg, #9e9e9e, #757575);
+    box-shadow: 0 4px 8px rgba(158, 158, 158, 0.4);
+}
+
+.btn-escolha.voltar:hover {
+    background: linear-gradient(135deg, #757575, #9e9e9e);
+    transform: scale(1.05);
+}
