@@ -3,7 +3,8 @@ import { useContext } from 'react';
 import { QuizContext } from '../context/quiz';
 
 import './GameOver.css';
-import Final from "../../img/final.png";
+import Final from "../../img/gameover.png"
+
 
 const GamerOver = () => {
     const [quizState, dispatch] = useContext(QuizContext);

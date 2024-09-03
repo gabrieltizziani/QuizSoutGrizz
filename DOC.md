@@ -12,5 +12,4 @@ Diagrama de Sequência:
 ![DS](./Doc/DSequencia.jpeg)
 
 
-Documento de Visão:
-Download aqui!
+
